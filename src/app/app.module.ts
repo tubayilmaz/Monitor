@@ -13,7 +13,7 @@ import { RouterModule } from "@angular/router";
   declarations: [
     AppComponent,
     EmployeeComponent,
-EmployeeDetailComponent
+    EmployeeDetailComponent
   ],
   imports: [
     BrowserModule,

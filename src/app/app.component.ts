@@ -10,6 +10,7 @@ import {Component, OnInit} from "@angular/core";
     <a routerLink="/employeeDetail" routerLinkActive="active">Detail</a>
     </nav>
     `
+
 })
 
 export class AppComponent{
