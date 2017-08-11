@@ -4,17 +4,32 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { EmployeeComponent } from './employee.component';
+import { EmployeeService } from './employee.service';
+import { EmployeeDetailComponent } from "./employeeDetail.component";
+import { RouterModule } from "@angular/router";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EmployeeComponent,
+EmployeeDetailComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot([
+      {
+        path: 'employees',
+        component: EmployeeComponent
+      }
+    ])
+
   ],
-  providers: [],
+  providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
